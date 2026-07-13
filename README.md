@@ -14,28 +14,28 @@ Questo repository contiene il materiale didattico e il codice per il laboratorio
 
 - Azure CLI installata e autenticata (`az login`).
 - Terraform CLI installato (versione >= 1.5.0).
-- Jupyter Notebook (opzionale, per eseguire la guida interattiva).
+- PowerShell.
 - Accesso alla subscription Azure e al Resource Group creato nel Day 1.
 
 ## Utilizzo
 
 1. Copiare il file delle variabili:
-   ```bash
-   cp Day2_Lab_Terraform/terraform.tfvars.example Day2_Lab_Terraform/terraform.tfvars
+   ```powershell
+   Copy-Item "Day2_Lab_Terraform/terraform.tfvars.example" -Destination "Day2_Lab_Terraform/terraform.tfvars"
    ```
 2. Modificare il file `terraform.tfvars` inserendo il proprio nome e il nome del Resource Group assegnato.
 3. Inizializzare il progetto:
-   ```bash
-   cd Day2_Lab_Terraform
+   ```powershell
+   Set-Location Day2_Lab_Terraform
    terraform init
    ```
 4. Eseguire la validazione e il plan:
-   ```bash
+   ```powershell
    terraform validate
    terraform plan
    ```
 5. Applicare le modifiche:
-   ```bash
+   ```powershell
    terraform apply
    ```
 
