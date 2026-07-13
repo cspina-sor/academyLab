@@ -1,0 +1,3 @@
+student_name        = "mario"
+resource_group_name = "rg-mario-day1"
+sku_name            = "F1"
