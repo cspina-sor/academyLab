@@ -28,5 +28,10 @@ resource "azurerm_linux_web_app" "app" {
 
   site_config {
     always_on = false
+
+    application_stack {
+      docker_image_name   = "lenzork/cookie-clicker:latest"
+      docker_registry_url = "https://index.docker.io/v1"
+    }
   }
 }
