@@ -7,7 +7,11 @@ Questo repository contiene il materiale didattico e il codice per il laboratorio
 - `Day2_Lab_Terraform/`: Contiene il codice Terraform strutturato.
   - `main.tf`, `variables.tf`, `outputs.tf`: Modulo root.
   - `data.tf`: Utilizza un `data source` per leggere il Resource Group dedicato assegnato nel Day 1, senza ricrearlo.
-  - `modules/web-app/`: Modulo riusabile per il deployment di App Service Plan e Web App.
+  - `modules/web-app/`: Modulo riusabile per il deployment Docker.
+  - `modules/web-app-node/`: Modulo di esempio per App Node.js (v20-lts).
+  - `modules/web-app-python/`: Modulo di esempio per App Python (v3.12).
+  - `modules/web-app-dotnet/`: Modulo di esempio per App .NET (v8.0).
+  - `modules/web-app-php/`: Modulo di esempio per App PHP (v8.2).
 - `Day2_Terraform_Lab.ipynb`: Notebook Jupyter interattivo che fa da guida per l'esecuzione dei comandi Terraform (Init, Plan, Apply, Destroy) direttamente in ambiente studente.
 
 ## Prerequisiti
