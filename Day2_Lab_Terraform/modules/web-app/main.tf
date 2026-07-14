@@ -1,6 +1,7 @@
 locals {
-  plan_name = "asp-${var.student_name}"
-  app_name  = "app-${var.student_name}-${random_string.suffix.result}"
+  safe_name = replace(lower(var.student_name), " ", "-")
+  plan_name = "asp-${local.safe_name}"
+  app_name  = "app-${local.safe_name}-${random_string.suffix.result}"
 }
 
 resource "random_string" "suffix" {
